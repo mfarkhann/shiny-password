@@ -43,7 +43,8 @@ shinyServer(function(session, input, output) {
             fluidRow(
                 fluidRow(
                     column(11, align = 'right', sprintf('Hi, %s',data_user()$username)),
-                    column(1, actionButton('logout',' ',style = "color: #ff0000;",icon("power-off")))
+                    column(1, actionButton('logout',' ',class = "btn-danger",
+                                           style = "color: white;",icon("power-off")))
                 ),
                 br(),
                 fluidRow(
