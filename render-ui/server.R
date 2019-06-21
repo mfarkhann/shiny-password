@@ -1,5 +1,4 @@
 library(shiny)
-library(shinydashboard)
 
 shinyServer(function(session, input, output) {
     
