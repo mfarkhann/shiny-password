@@ -14,3 +14,4 @@ update_user_session <- function(user, session) {
   saveRDS(credentials, "data/credentials.rds") 
 }
 
+source('helper.R')
