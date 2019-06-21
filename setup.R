@@ -6,11 +6,11 @@ df_user <- tibble(username = c('setosa','versicolor','virginica','admin'),
 
 # Render UI -----
 saveRDS(df_user,here::here('render-ui','data','credentials.rds'))
-runApp('render-ui',display.mode = 'showcase')
+shiny::runApp('render-ui',display.mode = 'showcase')
 
 # Shinyjs Hide -----
 saveRDS(df_user,here::here('shinyjs-hide','data','credentials.rds'))
-runApp('shinyjs-hide',display.mode = 'showcase')
+shiny::runApp('shinyjs-hide',display.mode = 'showcase')
 
 # Persistent Login ----
 
@@ -29,3 +29,5 @@ df_user %>%
   mutate(password = purrr::map_chr(password, bcrypt::hashpw)) %>% 
   mutate(session = "") %>% 
   saveRDS(here::here('persistent-login','data','credentials.rds'))
+
+shiny::runApp('persistent-login',display.mode = 'showcase')
