@@ -26,6 +26,7 @@ shinyServer(function(session, input, output) {
         shinyjs::hide("logout")
         shinyjs::hide("div_data")
         shinyjs::show("div_password")
+        shinyjs::reset('div_password')
     })
     
     # Output yang baru akan dibuat ketika user sudah login
