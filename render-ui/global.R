@@ -4,4 +4,4 @@ suppressPackageStartupMessages({
 
 df_credentials <- readRDS('data/credentials.rds')
 
-judul <- "Shiny Password using renderUI"
+judul <- "Shiny Password using Render UI"
